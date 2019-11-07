@@ -100,6 +100,10 @@
   3. FCFS is implemented by traversing the ptable and finding the process with least 
 
      creation time and running it without pre-emption.
+     For FCFS : 
+     Avg waiting time : 240
+     Avg TAT            : 292
+    
 
 
 ### Priority Based Scheduling:
@@ -127,5 +131,27 @@
      init and shell processess.
      
   7. To run the xv6 processess on FCFS initiate xv6 with `make clean SCHEDULER=PBS`
+
+    
+        Avg waiting time : 150
+        Avg TAT            : 186
+### Multi-Level Feedback Queue:
+
+   1. There 5 priority queues numbered 0-4 , with 0 being the highest priority queue and 4 being the 
+   
+      least.
+      
+   2. Any process at the time of creation is sent into the first priority queue and is demoted downwards
+   
+        as the time slice of the process in respective queues is completed.
+        
+   3. Time slice of each of the queues are as follows: 0 - 1 , 1 - 2, 2 - 4 , 3 - 8, 4 - 16
+   
+   4. Aging is also impemented.
+   
+   Avg waiting time : 206
+    Avg TAT            : 262
+   
+
 
 
