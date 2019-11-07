@@ -108,9 +108,9 @@
 
   2. The process with the least priority number is the process with the highest priority. 
 
-  i.e. a process with priority say, 0 is given higher preference than the process with 
+     i.e. a process with priority say, 0 is given higher preference than the process with 
 
-  any priority > 0.
+     any priority > 0.
 
   3. The default prioroty of any process in the implementation is set to 60.
 
